@@ -25,7 +25,7 @@
     NSString *gifPath = [[NSBundle mainBundle] pathForResource:@"planeGTA1" ofType:@"gif"];
     NSData   *gifData = [NSData dataWithContentsOfFile:gifPath];
     
-    
+    UIViewAutoresizingFlexibleWidth
     FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:gifData];
     FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
     imageView.animatedImage = image;
